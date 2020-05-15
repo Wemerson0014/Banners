@@ -1,0 +1,2 @@
+rootProject.name='TelasOnboarding'
+include ':app'
