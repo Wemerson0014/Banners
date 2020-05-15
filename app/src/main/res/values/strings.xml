@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">TelasOnboarding</string>
+
+    <!-- frag_screens -->
+    <string name="img">Imagens dos banners</string>
+
+    <!-- images banners -->
+    <string-array name="banners">
+        <item>carrera.jpg</item>
+        <item>cateye.jpg</item>
+        <item>dior.jpg</item>
+        <item>gucci.jpg</item>
+        <item>vogue.jpg</item>
+    </string-array>
 </resources>
