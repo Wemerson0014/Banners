@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TelasOnboarding</string>
+    <string name="app_name">Banners</string>
 
     <!-- frag_screens -->
     <string name="img">Imagens dos banners</string>

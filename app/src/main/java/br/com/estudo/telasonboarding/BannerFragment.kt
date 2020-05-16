@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.frag_screen.*
 
-class BannerFragment: Fragment() {
+class BannerFragment : Fragment() {
 
     companion object {
-        fun getInstance(position : Int) : BannerFragment {
+        fun getInstance(filename: String): BannerFragment {
             return BannerFragment().apply {
                 arguments = Bundle().apply {
-                    putInt("position", position)
+                    putString("filename", filename)
                 }
             }
         }
@@ -29,11 +29,7 @@ class BannerFragment: Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val position = requireArguments().getInt("position")
-
-        val banners = resources.getStringArray(R.array.banners)
-        val filename = banners[position]
-
+        val filename = requireArguments().getString("filename")!!
         val file = resources.assets.open(filename)
         val bitmap = BitmapFactory.decodeStream(file)
         file.close()
